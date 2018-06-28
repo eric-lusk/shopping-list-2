@@ -10,10 +10,11 @@
 */
 typedef struct ItemToPurchase{
    char itemName[50];
+   char itemDescription[100];
    int itemPrice;
    int itemQuantity;
 } ItemToPurchase;
 
 void MakeItemBlank(ItemToPurchase*);
 void PrintItemCost(ItemToPurchase*);
-
+void PrintItemDescription(ItemToPurchase*);
